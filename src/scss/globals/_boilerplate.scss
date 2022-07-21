@@ -23,9 +23,9 @@ body {
   margin: 0;
   padding: 0;
 
-  background-color: var(--bg-color);
-  inline-size: 100vw;
-  block-size: 100vh;
+  @include breakpoint(large) {
+    block-size: 100vh;
+  }
 }
 
 li {
@@ -33,7 +33,7 @@ li {
 }
 
 a {
-  color: var(--accent-color);
+  color: var(--sedans-bg);
   text-decoration: none;
 
   &:hover {
@@ -41,8 +41,12 @@ a {
   }
 }
 
+footer {
+  inline-size: 100%;
+}
+
 .attribution {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 0%);
   text-align: center;
   margin-block-start: rem(50);
   inline-size: 100%;
