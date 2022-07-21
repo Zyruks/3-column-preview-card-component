@@ -38,6 +38,30 @@ h4 {
 /* ******************* *\
  ? #card typography
 \* ******************* */
+.card {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.card__title {
+  font-size: rem(30);
+  text-transform: uppercase;
+}
+
+.card__description {
+  color: var(--very-light-gray);
+  font-size: rem(15);
+  font-family: $secondary-font;
+  line-height: 1.8;
+
+  @include breakpoint(large) {
+    font-size: rem(14);
+    line-height: 1.6;
+  }
+}
+
+.card__btn {
+  font-family: $secondary-font;
+}
 
 /* ******************* *\
  ? #card typography end
